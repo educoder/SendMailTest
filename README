@@ -1,0 +1,18 @@
+A simple email sender class, used to test if the host server can send email using GMail's SMTP server.
+
+Partially followed steps on this page: http://www.mkyong.com/java/javamail-api-sending-email-via-gmail-smtp-example/ "Gmail to SSL" section
+and other websites.
+
+Config settings (ie username,password,toEmailAddress,etc) must be stored in src/main/resources/mail.properties.
+
+Usage 
+You will need maven and git.
+1. Check out the project using git.
+2. Copy src/main/resources/sample_mail.properties to src/main/resources/mail.properties and edit the file.
+
+Option 1
+1. Run mvn test.  This will in effect run the JUnit tests in src/main/test/SendmailTest.java
+
+Option 2
+1. Import this project in Eclipse (in Eclipse, "File"->"Import..."->"Existing Projects into Workspace")
+2. Run Sendmail.java as Java Application. (Right click on Sendmail.java->"Run As"->"Java Application"
